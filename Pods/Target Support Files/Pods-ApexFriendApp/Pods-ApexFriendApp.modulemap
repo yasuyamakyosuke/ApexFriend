@@ -1,0 +1,6 @@
+framework module Pods_ApexFriendApp {
+  umbrella header "Pods-ApexFriendApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
