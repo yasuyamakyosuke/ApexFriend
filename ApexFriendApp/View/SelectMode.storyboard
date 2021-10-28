@@ -11,7 +11,7 @@
         <!--Select Mode View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="SelectModeViewController" customModule="ApexFriendApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectModeVC" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SelectModeViewController" customModule="ApexFriendApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,12 +36,49 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="jAE-dx-f5K">
+                                <rect key="frame" x="7" y="317" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="編集"/>
+                                <connections>
+                                    <action selector="goEditPlofileButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ifS-m3-QYm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" id="Gja-gD-lZe">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="zaX-Cc-FLV">
+                                <rect key="frame" x="20" y="12" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="編集"/>
+                            </button>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="F5F-aN-5Rw"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934.78260869565224" y="54.910714285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="edL-2w-67J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NZA-Iy-yZU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6wa-PO-4Wl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="p5P-67-BWP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6l7-7q-dmC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.637681159420293" y="54.910714285714285"/>
         </scene>

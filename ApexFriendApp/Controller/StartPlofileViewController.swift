@@ -12,6 +12,8 @@ import FirebaseFirestore
 
 class StartPlofileViewController: UIViewController {
     
+    var users: [String: User] = [:]
+    
     @IBOutlet weak var nameTextField: UITextField!
     
     
@@ -32,24 +34,24 @@ class StartPlofileViewController: UIViewController {
                     return}
                 let userID = user.uid
                 UserDefaults.standard.set(userID, forKey: "userID")
-                let userData = User(name: name, id: userID)
+                let userData = User(name: name, id: userID, icon: nil)
                 print(userData)
                 let db = Firestore.firestore()
-                db.collection("User").document(userData.id).setData(["name":userData.name]){ err in
+                db.collection("User").document(userData.id).setData(["name": userData.name as Any]){ err in
                     if let err = err {
                         print("Error writing document: \(err)")
                     } else {
                         print("Document successfully written!")
                     }
-                    let selectModestoryboard = UIStoryboard(name: "SelectMode", bundle: nil)
-                    guard let selectModeView = selectModestoryboard.instantiateInitialViewController() as? SelectModeViewController else {return}
-                    present(selectModeView, animated: true)
                     
                 }
             }
             
         }
-        
+        print(#line)
+        let selectModestoryboard = UIStoryboard(name: "SelectMode", bundle: nil)
+        guard let selectModeView = selectModestoryboard.instantiateInitialViewController() as? SelectModeViewController else {return}
+        present(selectModeView, animated: true)
         
     }
 }

@@ -12,4 +12,5 @@ import Firebase
 struct User {
     let name: String?
     let id: String
+    let icon: String?
 }
