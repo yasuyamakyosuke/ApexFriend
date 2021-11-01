@@ -13,4 +13,5 @@ struct User {
     let name: String?
     let id: String
     let icon: String?
+    let mode: String?
 }

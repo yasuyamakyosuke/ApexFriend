@@ -72,8 +72,9 @@ class EditPlofileViewController: UIViewController {
                 guard let data = document.data()  else { return }
                 let name = data["name"] as? String
                 let icon = data["icon"] as? String
+                let mode = data["mode"] as? String
                 let id = document.documentID
-                let user = User(name:name, id:id, icon: icon)
+                let user = User(name:name, id:id, icon: icon, mode: mode)
                 self.users = user
                 print(user)
                 userNameLabel.text = user.name
@@ -116,9 +117,7 @@ class EditPlofileViewController: UIViewController {
     func imageEdit() {
         let alert = UIAlertController(title: "アイコンの変更", message: nil, preferredStyle: .alert)
         let yesAction = UIAlertAction(title: "ライブラリ", style: .default) { [weak self]  _ in
-            print("--1--")
             self?.imageSelect()
-            print("--2--")
             self?.userImageRegister()
         }
         
@@ -128,10 +127,7 @@ class EditPlofileViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     private func userImageRegister() {
-        print("--3--")
-        print(selectedImage)
         guard let image = selectedImage else { return }
-        print("--4--")
         guard let uploadImage = image.jpegData(compressionQuality: 0.3) else {
             return }
         let storage = Storage.storage()
@@ -146,7 +142,6 @@ class EditPlofileViewController: UIViewController {
             }
             
             imageRef.downloadURL { (url, error) in
-                print("--4--")
                 if let error = error {
                     print(error.localizedDescription)
                 }
@@ -158,7 +153,6 @@ class EditPlofileViewController: UIViewController {
                             print("画像 guard let uid = Auth.auth().currentUser?.uid else { return }の保存に失敗しました。\(err)")
                             return
                         }
-                        print("--5--")
                     }
                 }
             }

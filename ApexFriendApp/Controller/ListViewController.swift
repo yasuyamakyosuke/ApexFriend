@@ -15,6 +15,17 @@ class ListViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func backSelectButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+         
+    }
+    
+    @IBAction func recruitmentButton(_ sender: Any) {
+        let recruitmentviewstoryboard = UIStoryboard(name: "Recruitment", bundle: nil)
+        guard let recruitmentviewController = recruitmentviewstoryboard.instantiateInitialViewController() as? RecruitmentViewController else {return}
+        present(recruitmentviewController, animated: true)
+    }
+    
 
     /*
     // MARK: - Navigation

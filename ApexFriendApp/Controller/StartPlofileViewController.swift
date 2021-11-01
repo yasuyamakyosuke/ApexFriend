@@ -34,7 +34,7 @@ class StartPlofileViewController: UIViewController {
                     return}
                 let userID = user.uid
                 UserDefaults.standard.set(userID, forKey: "userID")
-                let userData = User(name: name, id: userID, icon: nil)
+                let userData = User(name: name, id: userID, icon: nil, mode: nil)
                 print(userData)
                 let db = Firestore.firestore()
                 db.collection("User").document(userData.id).setData(["name": userData.name as Any]){ err in

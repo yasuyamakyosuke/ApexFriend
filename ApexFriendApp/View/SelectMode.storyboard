@@ -22,6 +22,7 @@
                                 <state key="normal" title="カジュアル"/>
                                 <connections>
                                     <action selector="goListButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cXn-qB-qZ6"/>
+                                    <action selector="gocasualButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Q7K-7w-TZz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVd-iv-tI5">
@@ -42,6 +43,14 @@
                                 <state key="normal" title="編集"/>
                                 <connections>
                                     <action selector="goEditPlofileButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ifS-m3-QYm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piD-a3-beQ">
+                                <rect key="frame" x="171" y="408" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="goOneononeButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Z8j-jI-QUg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -80,7 +89,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6l7-7q-dmC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.637681159420293" y="54.910714285714285"/>
+            <point key="canvasLocation" x="14" y="70"/>
         </scene>
     </scenes>
     <resources>
