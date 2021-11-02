@@ -38,7 +38,7 @@ class EditPlofileViewController: UIViewController {
         userIconImage.layer.cornerRadius = userIconImage.bounds.height/2
         userIconImage.clipsToBounds = true
         userIconImage.backgroundColor = .red
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -59,8 +59,8 @@ class EditPlofileViewController: UIViewController {
                 userNameLabel.text = name
             }
         }
-            
-            
+        
+        
     }
     
     func userFirebase() {
@@ -158,7 +158,7 @@ class EditPlofileViewController: UIViewController {
             }
         }
         
-
+        
     }
     
     @IBAction func backButton(_ sender: Any) {
@@ -166,7 +166,7 @@ class EditPlofileViewController: UIViewController {
     }
     
     
-
+    
 }
 
 
@@ -209,7 +209,7 @@ extension EditPlofileViewController: UIImagePickerControllerDelegate,UINavigatio
             selectedImage = editImage
         } else if let originalImage = info[.originalImage] as? UIImage {
             selectedImage = originalImage
-        print(#line)
+            print(#line)
         }
         print(#line)
         userImageRegister()
