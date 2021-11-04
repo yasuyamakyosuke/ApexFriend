@@ -27,6 +27,9 @@
 		816BA495272FDF54006B6D9D /* RecruitmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BA494272FDF54006B6D9D /* RecruitmentViewController.swift */; };
 		816BA4E2273362FE006B6D9D /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BA4E0273362FE006B6D9D /* ListTableViewCell.swift */; };
 		816BA4E3273362FE006B6D9D /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 816BA4E1273362FE006B6D9D /* ListTableViewCell.xib */; };
+		816BA4E527337503006B6D9D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BA4E427337503006B6D9D /* Message.swift */; };
+		816BA4E72733D258006B6D9D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BA4E62733D258006B6D9D /* DetailViewController.swift */; };
+		816BA4E92733D28E006B6D9D /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816BA4E82733D28E006B6D9D /* Detail.storyboard */; };
 		9A5AA40B2BF5278F231CEAA8 /* Pods_ApexFriendApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4528ABEDF0BD7B606521C9F7 /* Pods_ApexFriendApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,9 @@
 		816BA494272FDF54006B6D9D /* RecruitmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitmentViewController.swift; sourceTree = "<group>"; };
 		816BA4E0273362FE006B6D9D /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		816BA4E1273362FE006B6D9D /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		816BA4E427337503006B6D9D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		816BA4E62733D258006B6D9D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		816BA4E82733D28E006B6D9D /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		C120194250FCE1C82D1F1378 /* Pods-ApexFriendApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApexFriendApp.debug.xcconfig"; path = "Target Support Files/Pods-ApexFriendApp/Pods-ApexFriendApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +120,7 @@
 				8168A13D27229FF800E0D3B5 /* Start.storyboard */,
 				8168A160272A721000E0D3B5 /* EditPlofile.storyboard */,
 				816BA492272FDF41006B6D9D /* Recruitment.storyboard */,
+				816BA4E82733D28E006B6D9D /* Detail.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -122,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				8168A1512729354A00E0D3B5 /* User.swift */,
+				816BA4E427337503006B6D9D /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -136,6 +144,7 @@
 				8168A13B27229FF800E0D3B5 /* StartViewController.swift */,
 				8168A15E272A71FB00E0D3B5 /* EditPlofileViewController.swift */,
 				816BA494272FDF54006B6D9D /* RecruitmentViewController.swift */,
+				816BA4E62733D258006B6D9D /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -220,6 +229,7 @@
 				8168A1582729464100E0D3B5 /* List.storyboard in Resources */,
 				8168A156272941D400E0D3B5 /* SelectMode.storyboard in Resources */,
 				8168A14427229FFC00E0D3B5 /* LaunchScreen.storyboard in Resources */,
+				816BA4E92733D28E006B6D9D /* Detail.storyboard in Resources */,
 				8168A14E2722A5AA00E0D3B5 /* StartPlofile.storyboard in Resources */,
 				8168A14127229FFC00E0D3B5 /* Assets.xcassets in Resources */,
 				816BA493272FDF41006B6D9D /* Recruitment.storyboard in Resources */,
@@ -281,9 +291,11 @@
 				8168A13C27229FF800E0D3B5 /* StartViewController.swift in Sources */,
 				8168A13827229FF800E0D3B5 /* AppDelegate.swift in Sources */,
 				8168A15F272A71FB00E0D3B5 /* EditPlofileViewController.swift in Sources */,
+				816BA4E72733D258006B6D9D /* DetailViewController.swift in Sources */,
 				8168A1522729354A00E0D3B5 /* User.swift in Sources */,
 				8168A154272941A600E0D3B5 /* SelectModeViewController.swift in Sources */,
 				8168A1502722A64700E0D3B5 /* StartPlofileViewController.swift in Sources */,
+				816BA4E527337503006B6D9D /* Message.swift in Sources */,
 				8168A13A27229FF800E0D3B5 /* SceneDelegate.swift in Sources */,
 				8168A15A2729465600E0D3B5 /* ListViewController.swift in Sources */,
 				816BA495272FDF54006B6D9D /* RecruitmentViewController.swift in Sources */,

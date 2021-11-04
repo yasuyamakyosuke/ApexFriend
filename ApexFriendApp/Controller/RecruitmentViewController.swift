@@ -114,7 +114,6 @@ class RecruitmentViewController: UIViewController,UIPickerViewDelegate,UIPickerV
                 let mode = data["mode"] as? String
                 let id = document.documentID
                 let user = User(name: name, id: id, icon: icon, mode: mode)
-                // インスタンス変数のself.userに入れる
                 self.selectMode = user.mode
                 
                 
