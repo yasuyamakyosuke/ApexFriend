@@ -11,7 +11,6 @@
         <!--Recruitment View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="recruitment" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="RecruitmentViewController" customModule="ApexFriendApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -160,6 +159,7 @@
                         <outlet property="vcTextField" destination="2Sy-zb-JFJ" id="dWm-g9-hIR"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-214.49275362318843" y="53.571428571428569"/>
         </scene>

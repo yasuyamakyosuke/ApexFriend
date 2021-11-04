@@ -25,6 +25,8 @@
 		8168A161272A721000E0D3B5 /* EditPlofile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8168A160272A721000E0D3B5 /* EditPlofile.storyboard */; };
 		816BA493272FDF41006B6D9D /* Recruitment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816BA492272FDF41006B6D9D /* Recruitment.storyboard */; };
 		816BA495272FDF54006B6D9D /* RecruitmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BA494272FDF54006B6D9D /* RecruitmentViewController.swift */; };
+		816BA4E2273362FE006B6D9D /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BA4E0273362FE006B6D9D /* ListTableViewCell.swift */; };
+		816BA4E3273362FE006B6D9D /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 816BA4E1273362FE006B6D9D /* ListTableViewCell.xib */; };
 		9A5AA40B2BF5278F231CEAA8 /* Pods_ApexFriendApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4528ABEDF0BD7B606521C9F7 /* Pods_ApexFriendApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		8168A160272A721000E0D3B5 /* EditPlofile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = EditPlofile.storyboard; path = ApexFriendApp/Controller/EditPlofile.storyboard; sourceTree = SOURCE_ROOT; };
 		816BA492272FDF41006B6D9D /* Recruitment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recruitment.storyboard; sourceTree = "<group>"; };
 		816BA494272FDF54006B6D9D /* RecruitmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitmentViewController.swift; sourceTree = "<group>"; };
+		816BA4E0273362FE006B6D9D /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		816BA4E1273362FE006B6D9D /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		C120194250FCE1C82D1F1378 /* Pods-ApexFriendApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApexFriendApp.debug.xcconfig"; path = "Target Support Files/Pods-ApexFriendApp/Pods-ApexFriendApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +109,7 @@
 			children = (
 				8168A14D2722A5AA00E0D3B5 /* StartPlofile.storyboard */,
 				8168A1572729464100E0D3B5 /* List.storyboard */,
+				816BA4E1273362FE006B6D9D /* ListTableViewCell.xib */,
 				8168A155272941D400E0D3B5 /* SelectMode.storyboard */,
 				8168A13D27229FF800E0D3B5 /* Start.storyboard */,
 				8168A160272A721000E0D3B5 /* EditPlofile.storyboard */,
@@ -125,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				8168A1592729465600E0D3B5 /* ListViewController.swift */,
+				816BA4E0273362FE006B6D9D /* ListTableViewCell.swift */,
 				8168A153272941A600E0D3B5 /* SelectModeViewController.swift */,
 				8168A14F2722A64700E0D3B5 /* StartPlofileViewController.swift */,
 				8168A13B27229FF800E0D3B5 /* StartViewController.swift */,
@@ -219,6 +225,7 @@
 				816BA493272FDF41006B6D9D /* Recruitment.storyboard in Resources */,
 				8168A161272A721000E0D3B5 /* EditPlofile.storyboard in Resources */,
 				8168A13F27229FF800E0D3B5 /* Start.storyboard in Resources */,
+				816BA4E3273362FE006B6D9D /* ListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +287,7 @@
 				8168A13A27229FF800E0D3B5 /* SceneDelegate.swift in Sources */,
 				8168A15A2729465600E0D3B5 /* ListViewController.swift in Sources */,
 				816BA495272FDF54006B6D9D /* RecruitmentViewController.swift in Sources */,
+				816BA4E2273362FE006B6D9D /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
