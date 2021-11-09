@@ -15,3 +15,4 @@ struct User {
     let icon: String?
     let mode: String?
 }
+

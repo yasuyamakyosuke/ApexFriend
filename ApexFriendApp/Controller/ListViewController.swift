@@ -15,6 +15,7 @@ class ListViewController: UIViewController {
     var user : User?
     var messageSelectMode : String?
     var messages: [Message] = []
+    var message : [String:Message] = [:]
     
 
     @IBOutlet weak var messageListTableView: UITableView!
@@ -32,7 +33,6 @@ class ListViewController: UIViewController {
     // ユーザーのデータを取るメソッド
     func userFirebase() {
         print(#line)
-        print("---2---")
         guard let uid = Auth.auth().currentUser?.uid else {return}
         let userRef = Firestore.firestore().collection("User").document(uid)
         userRef.getDocument { [self] (document, error ) in
@@ -70,6 +70,27 @@ class ListViewController: UIViewController {
                 users[id] = user
                 self.messageListTableView.reloadData()
                 print(#line,users)
+            }
+        }
+    }
+    func messageIdNeed(id:String) {
+        if message[id] != nil { return }
+        let messageRef = Firestore.firestore().collection("Message").document(id)
+        messageRef.getDocument { [self] (document, _) in
+            if let document = document, document.exists {
+                guard let data = document.data() else { return }
+                let selectMode = data["selectMode"] as! String
+                let selectNumber = data["selectNumber"] as! String
+                let selectPlatform = data["selectPlatform"] as! String
+                let selectFirstChara = data["selectFirstChara"] as! String
+                let selectSecondChara = data["selectSecondChara"] as! String
+                let time = data["time"] as? String
+                let title = data["title"] as? String
+                let userID = data["userID"] as! String
+                let vc = data["vc"] as? String
+                let createdAt = data["createdAt"] as! Timestamp
+                let message = Message(id:document.documentID,selectMode: selectMode, selectNumber: selectNumber, selectPlatform: selectPlatform, selectFirstChara: selectFirstChara, selectSecondChara: selectSecondChara, time: time, title: title, userID: userID, vc: vc, createdAt: createdAt)
+                self.message[id] = message
             }
         }
     }
@@ -164,7 +185,12 @@ extension ListViewController:UITableViewDelegate,UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let selectMessage = messages[indexPath.row].id
+        let selectUserID = messages[indexPath.row].id
+        print(#line,selectMessage)
         let detailviewstoryboard = UIStoryboard(name: "Detail", bundle: nil)
+        UserDefaults.standard.set(selectUserID, forKey: "userID")
+        UserDefaults.standard.set(selectMessage, forKey: "id")
         guard let detailviewController = detailviewstoryboard.instantiateInitialViewController() as? DetailViewController else {return}
         present(detailviewController, animated: true)
     }
@@ -172,3 +198,5 @@ extension ListViewController:UITableViewDelegate,UITableViewDataSource {
     
     
 }
+
+

@@ -11,5 +11,7 @@ pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'Nuke'
 pod 'Firebase/Storage'
+pod 'FontAwesomeKit', '~> 2.2.0'
+pod "IoniconsKit"
 
 end

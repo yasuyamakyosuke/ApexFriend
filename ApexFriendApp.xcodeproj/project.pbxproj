@@ -30,6 +30,7 @@
 		816BA4E527337503006B6D9D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BA4E427337503006B6D9D /* Message.swift */; };
 		816BA4E72733D258006B6D9D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BA4E62733D258006B6D9D /* DetailViewController.swift */; };
 		816BA4E92733D28E006B6D9D /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816BA4E82733D28E006B6D9D /* Detail.storyboard */; };
+		816BA4ED2738EEEA006B6D9D /* DerailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 816BA4EB2738EEEA006B6D9D /* DerailTableViewCell.xib */; };
 		9A5AA40B2BF5278F231CEAA8 /* Pods_ApexFriendApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4528ABEDF0BD7B606521C9F7 /* Pods_ApexFriendApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		816BA4E427337503006B6D9D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		816BA4E62733D258006B6D9D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		816BA4E82733D28E006B6D9D /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		816BA4EB2738EEEA006B6D9D /* DerailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DerailTableViewCell.xib; sourceTree = "<group>"; };
 		C120194250FCE1C82D1F1378 /* Pods-ApexFriendApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApexFriendApp.debug.xcconfig"; path = "Target Support Files/Pods-ApexFriendApp/Pods-ApexFriendApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 				8168A160272A721000E0D3B5 /* EditPlofile.storyboard */,
 				816BA492272FDF41006B6D9D /* Recruitment.storyboard */,
 				816BA4E82733D28E006B6D9D /* Detail.storyboard */,
+				816BA4EB2738EEEA006B6D9D /* DerailTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				8168A1582729464100E0D3B5 /* List.storyboard in Resources */,
 				8168A156272941D400E0D3B5 /* SelectMode.storyboard in Resources */,
 				8168A14427229FFC00E0D3B5 /* LaunchScreen.storyboard in Resources */,
+				816BA4ED2738EEEA006B6D9D /* DerailTableViewCell.xib in Resources */,
 				816BA4E92733D28E006B6D9D /* Detail.storyboard in Resources */,
 				8168A14E2722A5AA00E0D3B5 /* StartPlofile.storyboard in Resources */,
 				8168A14127229FFC00E0D3B5 /* Assets.xcassets in Resources */,

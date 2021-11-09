@@ -9,7 +9,7 @@ import Foundation
 import Firebase
 
 struct Message {
-    let id:String!
+    let id:String
     let selectMode:String!
     let selectNumber:String!
     let selectPlatform:String!

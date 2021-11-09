@@ -141,9 +141,7 @@ class RecruitmentViewController: UIViewController,UIPickerViewDelegate,UIPickerV
         let selectSecondChara = self.selectSecondChara
         let title = titleTextField.text
         let selectMode = self.selectMode
-        
         let userID = Auth.auth().currentUser!.uid
-        
         let db = Firestore.firestore()
         
         let data: [String: Any] = [
